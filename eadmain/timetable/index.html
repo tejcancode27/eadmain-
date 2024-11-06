@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Timetable</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        text-transform: uppercase;
+      }
+      .timetable {
+        font-size: 14px;
+        text-align: center;
+        border: 2px solid #333;
+        margin-top: 30px;
+      }
+      .timetable th,
+      .timetable td {
+        border: 2px solid #333;
+        padding: 12px;
+      }
+      .lunch-break {
+        writing-mode: vertical-rl;
+        text-align: center;
+        font-weight: bold;
+        background-color: #ffeedb;
+      }
+      .timetable th {
+        background-color: #007bff;
+        color: #fff;
+      }
+      .timetable td:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
+      .timetable td:nth-child(even) {
+        background-color: #e9ecef;
+      }
+      .day-header {
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+      .table-title {
+        color: #007bff;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center table-title">Chaitanya Bharathi Institute of Technology</h1>
+      <h2 class="text-center my-4">Department of Information Technology</h2>
+      <h4 class="text-center">Class Timetable for the AY 2024-25 ODD Semester</h4>
+      <h5 class="text-center">Class: BE - V Semester IT-3</h5>
+      <h6 class="text-center">Room No: L-307</h6>
+      <h6 class="text-center">W.E.F.: 30/07/2024</h6>
+      
+      <div class="table-responsive">
+        <table class="table table-bordered timetable">
+          <thead>
+            <tr>
+              <th rowspan="2">Period</th>
+              <th>I</th>
+              <th>II</th>
+              <th>III</th>
+              <th class="lunch-break" rowspan="6"></th>
+              <th>IV</th>
+              <th>V</th>
+              <th>VI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="day-header">Day/Time</th>
+              <th>9:10 to 10:10 AM</th>
+              <th>10:10 to 11:10 AM</th>
+              <th>11:15 to 12:15 PM</th>
+              <td class="lunch-break" rowspan="6">
+                <span style="color: red">Lunch Break</span> <br>(12:15 to 1:00 PM)
+              </td>
+              <th>1:00 to 2:00 PM</th>
+              <th>2:00 to 3:00 PM</th>
+              <th>3:05 to 4:05 PM</th>
+            </tr>
+            <tr>
+              <th>Monday</th>
+              <td>CN Lab (B1) / EAD Lab (B2)</td>
+              <td>CN Lab (B1) / EAD Lab (B2)</td>
+              <td>PE-2</td>
+              <td>CN</td>
+              <td>EAD</td>
+              <td>ML</td>
+            </tr>
+            <tr>
+              <th>Tuesday</th>
+              <td>PE-2</td>
+              <td>ML</td>
+              <td>EAD</td>
+              <td>SE</td>
+              <td>CN</td>
+              <td>FLAT</td>
+            </tr>
+            <tr>
+              <th>Wednesday</th>
+              <td>CT LAB(B1) /ML LAB(B2)</td>
+              <td>CT LAB(B1) /ML LAB(B2)</td>
+              <td>FLAT</td>
+              <td>SE</td>
+              <td>CC LAB(B2) / LIB & SPORTS(B1)</td>
+              <td>CC LAB(B2) / LIB & SPORTS(B1)</td>
+            </tr>
+            <tr>
+              <th>Thursday</th>
+              <td>SE</td>
+              <td>EAD LAB(B1) /CN LAB(B2)</td>
+              <td>EAD LAB(B1) /CN LAB(B2)</td>
+              <td>FLAT</td>
+              <td>CC LAB(B1) / LIB & SPORTS(B2)</td>
+              <td>CC LAB(B1) / LIB & SPORTS(B2)</td>
+            </tr>
+            <tr>
+              <th>Friday</th>
+              <td>FLAT</td>
+              <td>ML</td>
+              <td>PE-2</td>
+              <td>EAD</td>
+              <td>CT Lab (B2) / ML Lab (B1)</td>
+              <td>CT Lab (B2) / ML Lab (B1)</td>
+            </tr>
+            <tr>
+              <th>Saturday</th>
+              <td>MENTORING</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

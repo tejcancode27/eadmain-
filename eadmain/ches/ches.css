@@ -1,0 +1,14 @@
+table{
+    border:1px groove black
+    text align:centre;
+}
+td{
+    height: 50px;
+    width: 50px;
+}
+#white {
+    background:white;
+}
+#black {
+    background: black;
+}

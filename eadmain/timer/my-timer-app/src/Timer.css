@@ -1,0 +1,74 @@
+/* Timer.css */
+
+:root {
+    /* Define color variables for easy customization */
+    --background-color: #e0f7fa;
+    --text-color: #00796b;
+    --timer-display-color: #004d40;
+    --start-button-color: #009688;
+    --start-button-hover: #00796b;
+    --reset-button-color: #d32f2f;
+    --reset-button-hover: #c62828;
+    --button-text-color: #ffffff;
+  }
+  
+  .timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 320px;
+    margin: 60px auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    font-family: Arial, sans-serif;
+  }
+  
+  .timer-container h1 {
+    font-size: 2em;
+    color: var(--text-color);
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .timer-display {
+    font-size: 3em;
+    color: var(--timer-display-color);
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+  }
+  
+  .timer-button {
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+  }
+  
+  .start-pause {
+    background-color: var(--start-button-color);
+  }
+  
+  .start-pause:hover {
+    background-color: var(--start-button-hover);
+    transform: scale(1.05);
+  }
+  
+  .reset {
+    background-color: var(--reset-button-color);
+    margin-left: 10px;
+  }
+  
+  .reset:hover {
+    background-color: var(--reset-button-hover);
+    transform: scale(1.05);
+  }
+  
